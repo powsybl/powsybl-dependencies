@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright (c) 2022, RTE (http://www.rte-france.com)
+    This Source Code Form is subject to the terms of the Mozilla Public
+    License, v. 2.0. If a copy of the MPL was not distributed with this
+    file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.powsybl</groupId>
+        <artifactId>powsybl-parent</artifactId>
+        <version>7</version>
+        <relativePath/>
+    </parent>
+
+    <artifactId>powsybl-dependencies</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>PowSyBl dependencies POM</name>
+    <description>A dependencies POM to help adding consistent PowSyBl dependencies to your project</description>
+    <url>https://www.powsybl.org</url>
+
+    <scm>
+        <connection>scm:git:https://github.com/powsybl/powsybl-dependencies.git</connection>
+        <developerConnection>scm:git:https://github.com/powsybl/powsybl-dependencies.git</developerConnection>
+        <url>https://github.com/powsybl/powsybl-dependencies</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>Geoffroy JAMGOTCHIAN</name>
+            <email>geoffroy.jamgotchian@rte-france.com</email>
+            <organization>RTE</organization>
+            <organizationUrl>http://www.rte-france.com</organizationUrl>
+        </developer>
+    </developers>
+
+    <properties>
+        <powsybl-core.version>4.7.0</powsybl-core.version>
+        <powsybl-open-loadflow.version>0.19.0</powsybl-open-loadflow.version>
+        <powsybl-single-line-diagram.version>2.9.1</powsybl-single-line-diagram.version>
+        <powsybl-network-area-diagram.version>0.3.0</powsybl-network-area-diagram.version>
+        <powsybl-dynawo.version>1.7.0</powsybl-dynawo.version>
+    </properties>
+
+    <profiles>
+        <profile>
+            <id>release</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>javadoc-aggregate-jar</id>
+                                <phase>package</phase>
+                                <inherited>false</inherited>
+                                <goals>
+                                    <goal>aggregate-jar</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- core -->
+            <dependency>
+                <groupId>com.powsybl</groupId>
+                <artifactId>powsybl-core</artifactId>
+                <version>${powsybl-core.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- sld -->
+            <!-- to replace by powsybl-single-line-diagram import starting from 2.10.0 -->
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>powsybl-single-line-diagram-core</artifactId>
+                <version>${powsybl-single-line-diagram.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>powsybl-single-line-diagram-iidm-extensions</artifactId>
+                <version>${powsybl-single-line-diagram.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>powsybl-single-line-diagram-cgmes-dl-conversion</artifactId>
+                <version>${powsybl-single-line-diagram.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>powsybl-single-line-diagram-cgmes-iidm-extensions</artifactId>
+                <version>${powsybl-single-line-diagram.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.powsybl</groupId>
+                <artifactId>powsybl-single-line-diagram-cgmes-iidm-extensions</artifactId>
+                <version>${powsybl-single-line-diagram.version}</version>
+                <type>test-jar</type>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>powsybl-single-line-diagram-cgmes-layout</artifactId>
+                <version>${powsybl-single-line-diagram.version}</version>
+            </dependency>
+
+            <!-- olf -->
+            <dependency>
+                <groupId>com.powsybl</groupId>
+                <artifactId>powsybl-open-loadflow</artifactId>
+                <version>${powsybl-open-loadflow.version}</version>
+            </dependency>
+
+            <!-- nad -->
+            <dependency>
+                <groupId>com.powsybl</groupId>
+                <artifactId>powsybl-network-area-diagram</artifactId>
+                <version>${powsybl-network-area-diagram.version}</version>
+            </dependency>
+
+            <!-- dynawo -->
+            <dependency>
+                <groupId>com.powsybl</groupId>
+                <artifactId>powsybl-dynawo-commons</artifactId>
+                <version>${powsybl-dynawo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.powsybl</groupId>
+                <artifactId>powsybl-dynaflow</artifactId>
+                <version>${powsybl-dynawo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.powsybl</groupId>
+                <artifactId>powsybl-dynawaltz</artifactId>
+                <version>${powsybl-dynawo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.powsybl</groupId>
+                <artifactId>powsybl-dynawaltz-dsl</artifactId>
+                <version>${powsybl-dynawo.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
