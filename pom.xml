@@ -47,6 +47,7 @@
         <powsybl-open-loadflow.version>0.20.0</powsybl-open-loadflow.version>
         <powsybl-single-line-diagram.version>2.10.0</powsybl-single-line-diagram.version>
         <powsybl-network-area-diagram.version>0.4.0</powsybl-network-area-diagram.version>
+        <powsybl-network-hypothesis.version>0.3.0</powsybl-network-hypothesis.version>
         <powsybl-dynawo.version>1.8.0</powsybl-dynawo.version>
         <powsybl-balances-adjustment.version>1.12.0</powsybl-balances-adjustment.version>
         <powsybl-entsoe.version>1.4.0</powsybl-entsoe.version>
@@ -84,6 +85,13 @@
                 <groupId>com.powsybl</groupId>
                 <artifactId>powsybl-network-area-diagram</artifactId>
                 <version>${powsybl-network-area-diagram.version}</version>
+            </dependency>
+
+            <!-- nh -->
+            <dependency>
+                <groupId>com.powsybl</groupId>
+                <artifactId>powsybl-network-hypothesis</artifactId>
+                <version>${powsybl-network-hypothesis.version}</version>
             </dependency>
 
             <!-- dynawo -->
