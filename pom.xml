@@ -43,13 +43,13 @@
     </developers>
 
     <properties>
-        <powsybl-core.version>4.8.0</powsybl-core.version>
-        <powsybl-open-loadflow.version>0.20.0</powsybl-open-loadflow.version>
-        <powsybl-single-line-diagram.version>2.10.0</powsybl-single-line-diagram.version>
-        <powsybl-network-area-diagram.version>0.4.0</powsybl-network-area-diagram.version>
-        <powsybl-dynawo.version>1.8.0</powsybl-dynawo.version>
-        <powsybl-balances-adjustment.version>1.12.0</powsybl-balances-adjustment.version>
-        <powsybl-entsoe.version>1.4.0</powsybl-entsoe.version>
+        <powsybl-core.version>4.9.0</powsybl-core.version>
+        <powsybl-open-loadflow.version>0.21.0</powsybl-open-loadflow.version>
+        <powsybl-single-line-diagram.version>2.11.0</powsybl-single-line-diagram.version>
+        <powsybl-network-area-diagram.version>0.5.0</powsybl-network-area-diagram.version>
+        <powsybl-dynawo.version>1.9.0</powsybl-dynawo.version>
+        <powsybl-balances-adjustment.version>1.13.0</powsybl-balances-adjustment.version>
+        <powsybl-entsoe.version>1.5.0</powsybl-entsoe.version>
     </properties>
 
     <dependencyManagement>
@@ -89,23 +89,10 @@
             <!-- dynawo -->
             <dependency>
                 <groupId>com.powsybl</groupId>
-                <artifactId>powsybl-dynawo-commons</artifactId>
+                <artifactId>powsybl-dynawo</artifactId>
                 <version>${powsybl-dynawo.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.powsybl</groupId>
-                <artifactId>powsybl-dynaflow</artifactId>
-                <version>${powsybl-dynawo.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.powsybl</groupId>
-                <artifactId>powsybl-dynawaltz</artifactId>
-                <version>${powsybl-dynawo.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.powsybl</groupId>
-                <artifactId>powsybl-dynawaltz-dsl</artifactId>
-                <version>${powsybl-dynawo.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
 
             <!-- balances adjustment -->
@@ -118,53 +105,10 @@
             <!-- entsoe -->
             <dependency>
                 <groupId>com.powsybl</groupId>
-                <artifactId>powsybl-cne-converter</artifactId>
+                <artifactId>powsybl-entsoe</artifactId>
                 <version>${powsybl-entsoe.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.powsybl</groupId>
-                <artifactId>powsybl-cne-model</artifactId>
-                <version>${powsybl-entsoe.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.powsybl</groupId>
-                <artifactId>powsybl-entsoe-cgmes-balances-adjustment</artifactId>
-                <version>${powsybl-entsoe.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.powsybl</groupId>
-                <artifactId>powsybl-glsk-commons</artifactId>
-                <version>${powsybl-entsoe.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.powsybl</groupId>
-                <artifactId>powsybl-glsk-document-api</artifactId>
-                <version>${powsybl-entsoe.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.powsybl</groupId>
-                <artifactId>powsybl-glsk-document-cim</artifactId>
-                <version>${powsybl-entsoe.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.powsybl</groupId>
-                <artifactId>powsybl-glsk-document-cse</artifactId>
-                <version>${powsybl-entsoe.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.powsybl</groupId>
-                <artifactId>powsybl-glsk-document-io-api</artifactId>
-                <version>${powsybl-entsoe.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.powsybl</groupId>
-                <artifactId>powsybl-glsk-document-ucte</artifactId>
-                <version>${powsybl-entsoe.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.powsybl</groupId>
-                <artifactId>powsybl-glsk-quality-check-ucte</artifactId>
-                <version>${powsybl-entsoe.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
