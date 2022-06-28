@@ -43,13 +43,13 @@
     </developers>
 
     <properties>
-        <powsybl-core.version>4.9.0</powsybl-core.version>
+        <powsybl-core.version>4.9.1</powsybl-core.version>
         <powsybl-open-loadflow.version>0.21.0</powsybl-open-loadflow.version>
         <powsybl-single-line-diagram.version>2.11.0</powsybl-single-line-diagram.version>
         <powsybl-network-area-diagram.version>0.5.0</powsybl-network-area-diagram.version>
         <powsybl-dynawo.version>1.9.0</powsybl-dynawo.version>
         <powsybl-balances-adjustment.version>1.13.0</powsybl-balances-adjustment.version>
-        <powsybl-entsoe.version>1.5.0</powsybl-entsoe.version>
+        <powsybl-entsoe.version>1.5.1</powsybl-entsoe.version>
     </properties>
 
     <dependencyManagement>
