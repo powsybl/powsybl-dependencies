@@ -15,6 +15,7 @@ Below is the table of the set of compatible releases of PowSyBl repositories for
 | 1.1.0                | [4.8.0](https://github.com/powsybl/powsybl-core/releases/tag/v4.8.0) | [0.20.0](https://github.com/powsybl/powsybl-open-loadflow/releases/tag/v0.20.0) | [2.10.0](https://github.com/powsybl/powsybl-single-line-diagram/releases/tag/v2.10.0) | [0.4.0](https://github.com/powsybl/powsybl-network-area-diagram/releases/tag/v0.4.0) | [1.8.0](https://github.com/powsybl/powsybl-dynawo/releases/tag/v1.8.0) | [1.12.0](https://github.com/powsybl/powsybl-balances-adjustment/releases/tag/v1.12.0) | [1.4.0](https://github.com/powsybl/powsybl-entsoe/releases/tag/v1.4.0) |
 | 1.2.0                | [4.9.0](https://github.com/powsybl/powsybl-core/releases/tag/v4.9.0) | [0.21.0](https://github.com/powsybl/powsybl-open-loadflow/releases/tag/v0.21.0) | [2.11.0](https://github.com/powsybl/powsybl-single-line-diagram/releases/tag/v2.11.0) | [0.5.0](https://github.com/powsybl/powsybl-network-area-diagram/releases/tag/v0.5.0) | [1.9.0](https://github.com/powsybl/powsybl-dynawo/releases/tag/v1.9.0) | [1.13.0](https://github.com/powsybl/powsybl-balances-adjustment/releases/tag/v1.13.0) | [1.5.0](https://github.com/powsybl/powsybl-entsoe/releases/tag/v1.5.0) |
 | 1.2.1                | [4.9.1](https://github.com/powsybl/powsybl-core/releases/tag/v4.9.1) | [0.21.0](https://github.com/powsybl/powsybl-open-loadflow/releases/tag/v0.21.0) | [2.11.0](https://github.com/powsybl/powsybl-single-line-diagram/releases/tag/v2.11.0) | [0.5.0](https://github.com/powsybl/powsybl-network-area-diagram/releases/tag/v0.5.0) | [1.9.0](https://github.com/powsybl/powsybl-dynawo/releases/tag/v1.9.0) | [1.13.0](https://github.com/powsybl/powsybl-balances-adjustment/releases/tag/v1.13.0) | [1.5.1](https://github.com/powsybl/powsybl-entsoe/releases/tag/v1.5.1) |
+| 1.2.2                | [4.9.1](https://github.com/powsybl/powsybl-core/releases/tag/v4.9.1) | [0.22.0](https://github.com/powsybl/powsybl-open-loadflow/releases/tag/v0.22.0) | [2.12.0](https://github.com/powsybl/powsybl-single-line-diagram/releases/tag/v2.12.0) | [0.5.0](https://github.com/powsybl/powsybl-network-area-diagram/releases/tag/v0.5.0) | [1.9.0](https://github.com/powsybl/powsybl-dynawo/releases/tag/v1.9.0) | [1.13.0](https://github.com/powsybl/powsybl-balances-adjustment/releases/tag/v1.13.0) | [1.5.1](https://github.com/powsybl/powsybl-entsoe/releases/tag/v1.5.1) |
 
 ## Getting started
 To start using PowSyBl Dependencies, include it in the dependency management of your `pom.xml`
@@ -25,7 +26,7 @@ To start using PowSyBl Dependencies, include it in the dependency management of 
         <dependency>
             <groupId>com.powsybl</groupId>
             <artifactId>powsybl-dependencies</artifactId>
-            <version>1.2.1</version>
+            <version>1.2.2</version>
             <type>pom</type>
             <scope>import</scope>
         </dependency>
