@@ -20,7 +20,7 @@
     </parent>
 
     <artifactId>powsybl-dependencies</artifactId>
-    <version>1.4.0-SNAPSHOT</version>
+    <version>2.0.0</version>
     <packaging>pom</packaging>
 
     <name>PowSyBl dependencies POM</name>
@@ -43,13 +43,11 @@
     </developers>
 
     <properties>
-        <powsybl-core.version>4.10.1</powsybl-core.version>
-        <powsybl-open-loadflow.version>0.23.2</powsybl-open-loadflow.version>
-        <powsybl-single-line-diagram.version>2.13.0</powsybl-single-line-diagram.version>
-        <powsybl-network-area-diagram.version>0.6.0</powsybl-network-area-diagram.version>
-        <powsybl-dynawo.version>1.10.0</powsybl-dynawo.version>
-        <powsybl-balances-adjustment.version>1.14.0</powsybl-balances-adjustment.version>
-        <powsybl-entsoe.version>1.6.1</powsybl-entsoe.version>
+        <powsybl-core.version>5.0.0</powsybl-core.version>
+        <powsybl-open-loadflow.version>0.24.0</powsybl-open-loadflow.version>
+        <powsybl-diagram.version>3.0.0</powsybl-diagram.version>
+        <powsybl-dynawo.version>1.11.0</powsybl-dynawo.version>
+        <powsybl-entsoe.version>2.0.0</powsybl-entsoe.version>
     </properties>
 
     <dependencyManagement>
@@ -63,11 +61,11 @@
                 <scope>import</scope>
             </dependency>
 
-            <!-- sld -->
+            <!-- diagram: sld / nad -->
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>powsybl-single-line-diagram</artifactId>
-                <version>${powsybl-single-line-diagram.version}</version>
+                <artifactId>powsybl-diagram</artifactId>
+                <version>${powsybl-diagram.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -79,13 +77,6 @@
                 <version>${powsybl-open-loadflow.version}</version>
             </dependency>
 
-            <!-- nad -->
-            <dependency>
-                <groupId>com.powsybl</groupId>
-                <artifactId>powsybl-network-area-diagram</artifactId>
-                <version>${powsybl-network-area-diagram.version}</version>
-            </dependency>
-
             <!-- dynawo -->
             <dependency>
                 <groupId>com.powsybl</groupId>
@@ -93,13 +84,6 @@
                 <version>${powsybl-dynawo.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>
-
-            <!-- balances adjustment -->
-            <dependency>
-                <groupId>com.powsybl</groupId>
-                <artifactId>powsybl-balances-adjustment</artifactId>
-                <version>${powsybl-balances-adjustment.version}</version>
             </dependency>
 
             <!-- entsoe -->
