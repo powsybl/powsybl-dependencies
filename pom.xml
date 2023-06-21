@@ -20,7 +20,7 @@
     </parent>
 
     <artifactId>powsybl-dependencies</artifactId>
-    <version>2023.2.1</version>
+    <version>2023.2.2</version>
     <packaging>pom</packaging>
 
     <name>PowSyBl dependencies POM</name>
@@ -43,8 +43,8 @@
     </developers>
 
     <properties>
-        <powsybl-core.version>5.3.1</powsybl-core.version>
-        <powsybl-open-loadflow.version>1.2.1</powsybl-open-loadflow.version>
+        <powsybl-core.version>5.3.2</powsybl-core.version>
+        <powsybl-open-loadflow.version>1.2.2</powsybl-open-loadflow.version>
         <powsybl-diagram.version>3.3.0</powsybl-diagram.version>
         <powsybl-dynawo.version>1.14.0</powsybl-dynawo.version>
         <powsybl-entsoe.version>2.4.0</powsybl-entsoe.version>
