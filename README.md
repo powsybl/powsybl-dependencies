@@ -11,6 +11,7 @@ Below is the table of the set of compatible releases of PowSyBl repositories for
 
 | powsybl-dependencies |                             powsybl-core                             |                              powsybl-open-loadflow                              |                             powsybl-diagram                             |                              powsybl-dynawo                              |                             powsybl-entsoe                             |
 |:--------------------:|:--------------------------------------------------------------------:|:-------------------------------------------------------------------------------:|:-----------------------------------------------------------------------:|:------------------------------------------------------------------------:|:----------------------------------------------------------------------:|
+|       2023.2.3       | [5.3.2](https://github.com/powsybl/powsybl-core/releases/tag/v5.3.2) |  [1.2.3](https://github.com/powsybl/powsybl-open-loadflow/releases/tag/v1.2.3)  | [3.3.2](https://github.com/powsybl/powsybl-diagram/releases/tag/v3.3.2) | [1.14.0](https://github.com/powsybl/powsybl-dynawo/releases/tag/v1.14.0) | [2.5.0](https://github.com/powsybl/powsybl-entsoe/releases/tag/v2.5.0) |
 |       2023.2.2       | [5.3.2](https://github.com/powsybl/powsybl-core/releases/tag/v5.3.2) |  [1.2.2](https://github.com/powsybl/powsybl-open-loadflow/releases/tag/v1.2.2)  | [3.3.0](https://github.com/powsybl/powsybl-diagram/releases/tag/v3.3.0) | [1.14.0](https://github.com/powsybl/powsybl-dynawo/releases/tag/v1.14.0) | [2.4.0](https://github.com/powsybl/powsybl-entsoe/releases/tag/v2.4.0) |
 |       2023.2.1       | [5.3.1](https://github.com/powsybl/powsybl-core/releases/tag/v5.3.1) |  [1.2.1](https://github.com/powsybl/powsybl-open-loadflow/releases/tag/v1.2.1)  | [3.3.0](https://github.com/powsybl/powsybl-diagram/releases/tag/v3.3.0) | [1.14.0](https://github.com/powsybl/powsybl-dynawo/releases/tag/v1.14.0) | [2.4.0](https://github.com/powsybl/powsybl-entsoe/releases/tag/v2.4.0) |
 |       2023.2.0       | [5.3.0](https://github.com/powsybl/powsybl-core/releases/tag/v5.3.0) |  [1.2.1](https://github.com/powsybl/powsybl-open-loadflow/releases/tag/v1.2.1)  | [3.3.0](https://github.com/powsybl/powsybl-diagram/releases/tag/v3.3.0) | [1.14.0](https://github.com/powsybl/powsybl-dynawo/releases/tag/v1.14.0) | [2.4.0](https://github.com/powsybl/powsybl-entsoe/releases/tag/v2.4.0) |
@@ -44,7 +45,7 @@ To start using PowSyBl Dependencies, include it in the dependency management of 
         <dependency>
             <groupId>com.powsybl</groupId>
             <artifactId>powsybl-dependencies</artifactId>
-            <version>2023.2.2</version>
+            <version>2023.2.3</version>
             <type>pom</type>
             <scope>import</scope>
         </dependency>
