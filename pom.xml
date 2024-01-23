@@ -43,7 +43,7 @@
     </developers>
 
     <properties>
-        <powsybl-core.version>6.1.1</powsybl-core.version>
+        <powsybl-core.version>6.1.2</powsybl-core.version>
         <powsybl-open-loadflow.version>1.6.0</powsybl-open-loadflow.version>
         <powsybl-diagram.version>4.1.1</powsybl-diagram.version>
         <powsybl-dynawo.version>2.2.0</powsybl-dynawo.version>
