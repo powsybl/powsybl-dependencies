@@ -48,6 +48,7 @@
         <powsybl-diagram.version>4.2.0</powsybl-diagram.version>
         <powsybl-dynawo.version>2.3.0</powsybl-dynawo.version>
         <powsybl-entsoe.version>2.8.0</powsybl-entsoe.version>
+        <powsybl-open-rao.version>5.1.0</powsybl-open-rao.version>
     </properties>
 
     <dependencyManagement>
@@ -91,6 +92,15 @@
                 <groupId>com.powsybl</groupId>
                 <artifactId>powsybl-entsoe</artifactId>
                 <version>${powsybl-entsoe.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- open-rao -->
+            <dependency>
+                <groupId>com.powsybl</groupId>
+                <artifactId>powsybl-open-rao</artifactId>
+                <version>${powsybl-open-rao.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
