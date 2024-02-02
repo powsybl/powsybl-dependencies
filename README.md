@@ -61,7 +61,7 @@ To start using PowSyBl Dependencies, include it in the dependency management of 
         <dependency>
             <groupId>com.powsybl</groupId>
             <artifactId>powsybl-dependencies</artifactId>
-            <version>2023.4.1</version>
+            <version>2024.0.0</version>
             <type>pom</type>
             <scope>import</scope>
         </dependency>
