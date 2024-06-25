@@ -20,7 +20,7 @@
     </parent>
 
     <artifactId>powsybl-dependencies</artifactId>
-    <version>2024.1.2-SNAPSHOT</version>
+    <version>2024.1.2</version>
     <packaging>pom</packaging>
 
     <name>PowSyBl dependencies POM</name>
