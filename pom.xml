@@ -43,12 +43,12 @@
     </developers>
 
     <properties>
-        <powsybl-core.version>6.3.2</powsybl-core.version>
-        <powsybl-open-loadflow.version>1.11.0</powsybl-open-loadflow.version>
-        <powsybl-diagram.version>4.4.0</powsybl-diagram.version>
-        <powsybl-dynawo.version>2.4.0</powsybl-dynawo.version>
-        <powsybl-entsoe.version>2.9.0</powsybl-entsoe.version>
-        <powsybl-open-rao.version>5.5.1</powsybl-open-rao.version>
+        <powsybl-core.version>6.4.0</powsybl-core.version>
+        <powsybl-open-loadflow.version>1.12.0</powsybl-open-loadflow.version>
+        <powsybl-diagram.version>4.5.0</powsybl-diagram.version>
+        <powsybl-dynawo.version>2.5.0</powsybl-dynawo.version>
+        <powsybl-entsoe.version>2.10.0</powsybl-entsoe.version>
+        <powsybl-open-rao.version>5.6.0</powsybl-open-rao.version>
     </properties>
 
     <dependencyManagement>
