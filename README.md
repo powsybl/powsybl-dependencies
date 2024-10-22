@@ -12,6 +12,7 @@ Below are the tables of the compatible releases of PowSyBl repositories for the 
 
 | powsybl-dependencies |                             powsybl-core                             |                              powsybl-open-loadflow                              |                             powsybl-diagram                             |                             powsybl-dynawo                             |                             powsybl-entsoe                             |                             powsybl-open-rao                             |
 |:--------------------:|:--------------------------------------------------------------------:|:-------------------------------------------------------------------------------:|:-----------------------------------------------------------------------:|:----------------------------------------------------------------------:|:----------------------------------------------------------------------:|:------------------------------------------------------------------------:|
+|       2024.3.0       | [6.5.0](https://github.com/powsybl/powsybl-core/releases/tag/v6.5.0) | [1.13.1](https://github.com/powsybl/powsybl-open-loadflow/releases/tag/v1.13.1) | [4.6.1](https://github.com/powsybl/powsybl-diagram/releases/tag/v4.6.1) | [2.6.0](https://github.com/powsybl/powsybl-dynawo/releases/tag/v2.6.0) | [2.11.0](https://github.com/powsybl/powsybl-entsoe/releases/tag/v2.11.0) | [6.1.0](https://github.com/powsybl/powsybl-open-rao/releases/tag/v6.1.0) |
 |       2024.2.0       | [6.4.1](https://github.com/powsybl/powsybl-core/releases/tag/v6.4.1) | [1.12.2](https://github.com/powsybl/powsybl-open-loadflow/releases/tag/v1.12.2) | [4.5.1](https://github.com/powsybl/powsybl-diagram/releases/tag/v4.5.1) | [2.5.1](https://github.com/powsybl/powsybl-dynawo/releases/tag/v2.5.1) | [2.10.1](https://github.com/powsybl/powsybl-entsoe/releases/tag/v2.10.1) | [6.0.1](https://github.com/powsybl/powsybl-open-rao/releases/tag/v6.0.1) |
 |       2024.1.2       | [6.3.2](https://github.com/powsybl/powsybl-core/releases/tag/v6.3.2) | [1.11.0](https://github.com/powsybl/powsybl-open-loadflow/releases/tag/v1.11.0) | [4.4.0](https://github.com/powsybl/powsybl-diagram/releases/tag/v4.4.0) | [2.4.0](https://github.com/powsybl/powsybl-dynawo/releases/tag/v2.4.0) | [2.9.0](https://github.com/powsybl/powsybl-entsoe/releases/tag/v2.9.0) | [5.5.1](https://github.com/powsybl/powsybl-open-rao/releases/tag/v5.5.1) |
 |       2024.1.1       | [6.3.1](https://github.com/powsybl/powsybl-core/releases/tag/v6.3.1) | [1.10.0](https://github.com/powsybl/powsybl-open-loadflow/releases/tag/v1.10.0) | [4.4.0](https://github.com/powsybl/powsybl-diagram/releases/tag/v4.4.0) | [2.4.0](https://github.com/powsybl/powsybl-dynawo/releases/tag/v2.4.0) | [2.9.0](https://github.com/powsybl/powsybl-entsoe/releases/tag/v2.9.0) | [5.5.1](https://github.com/powsybl/powsybl-open-rao/releases/tag/v5.5.1) |
@@ -70,7 +71,7 @@ To start using PowSyBl Dependencies, include it in the dependency management of 
         <dependency>
             <groupId>com.powsybl</groupId>
             <artifactId>powsybl-dependencies</artifactId>
-            <version>2024.2.0</version>
+            <version>2024.3.0</version>
             <type>pom</type>
             <scope>import</scope>
         </dependency>
