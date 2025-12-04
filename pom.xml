@@ -44,9 +44,9 @@
 
     <properties>
         <powsybl-core.version>7.1.0-SNAPSHOT</powsybl-core.version>
-        <powsybl-open-loadflow.version>2.0.0</powsybl-open-loadflow.version>
+        <powsybl-open-loadflow.version>2.1.0-SNAPSHOT</powsybl-open-loadflow.version>
         <powsybl-diagram.version>5.0.0</powsybl-diagram.version>
-        <powsybl-dynawo.version>3.0.0</powsybl-dynawo.version>
+        <powsybl-dynawo.version>3.0.0-SNAPSHOT</powsybl-dynawo.version>
         <powsybl-entsoe.version>3.0.0</powsybl-entsoe.version>
         <powsybl-open-rao.version>7.0.0</powsybl-open-rao.version>
     </properties>
