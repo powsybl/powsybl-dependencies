@@ -15,7 +15,7 @@
     <parent>
         <groupId>com.powsybl</groupId>
         <artifactId>powsybl-parent</artifactId>
-        <version>24</version>
+        <version>26.1</version>
         <relativePath/>
     </parent>
 
@@ -43,12 +43,12 @@
     </developers>
 
     <properties>
-        <powsybl-core.version>7.2.2</powsybl-core.version>
-        <powsybl-open-loadflow.version>2.2.1</powsybl-open-loadflow.version>
+        <powsybl-core.version>7.3.0</powsybl-core.version>
+        <powsybl-open-loadflow.version>2.3.0</powsybl-open-loadflow.version>
         <powsybl-diagram.version>5.4.0</powsybl-diagram.version>
         <powsybl-dynawo.version>3.2.0</powsybl-dynawo.version>
-        <powsybl-entsoe.version>3.2.0</powsybl-entsoe.version>
-        <powsybl-open-rao.version>7.2.0</powsybl-open-rao.version>
+        <powsybl-entsoe.version>3.3.0</powsybl-entsoe.version>
+        <powsybl-open-rao.version>7.3.0</powsybl-open-rao.version>
     </properties>
 
     <dependencyManagement>
